@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+
+    <div class="credit-card" id="credit-card">
+        <img src="images/card-logo.svg" alt="card logo" class="card-logo">
+        <p id="card-img-number" class="card-img-number">0000 0000 0000 0000</p>
+        <div class="card-footer">
+            <p id="card-img-holder" class="card-img-holder">James Smith</p>
+            <p id="card-img-expiration" class="card-img-expiration"><span id="card-img-mm">00</span>/<span id="card-img-yy">00</span></p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        
+    <form class="bank-details" id="bank-details">
+        <label for="card-number">CARD NUMBER
+        <input 
+        type="text"
+        id="card-number"
+        name="card-number"
+        placeholder="e.g 0000 0000 0000 0000"
+        data-maxlength="19" 
+        oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+        required>
+    </label>
+
+        <label  for="card-holder">CARD HOLDER
+        <input 
+        type="text"
+        id="card-holder"
+        name="card-holder"
+        placeholder="e.g James Smith"
+        required>
+    </label>
+
+        <div class="form-footer">
+            <label for="expiration-mm">EXPIRATION MM
+            <input 
+            type="text"
+            data-maxlength="2" 
+            oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+            id="expiration-mm"
+            name="expiration-mm"
+            placeholder="MONTH"
+            required>
+        </label>
+
+            <label for="expiration-yy">EXPIRATION YY
+            <input type="text"
+            data-maxlength="2" 
+            oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+            id="expiration-yy"
+            name="expiration-yy"
+            placeholder="YEAR"
+            required>
+        </label>
+
+            <label for="cvv">CVV
+            <input type="text"
+            data-maxlength="3" 
+            oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+            id="cvv"
+            name="cvv"
+            placeholder="CVV"
+            required>
+        </label>
+        </div>
+        <button id="submit-btn" type="submit">SUBMIT</button>
+    </form>
+
+    <div id='modal' class="modal hidden">
+        <img src="images/icon-complete.svg" alt="complete icon" width=80 height=80>
+        <h1 class="modal-title">THANK YOU</h1>
+        <p class="modal-description">We've added your card details</p>
+        <button id="modal-continue-btn" type="button">Continue</button>
+    </div>
+
+</main>
+    <script src="index.js"></script>
+</body>
+</html>

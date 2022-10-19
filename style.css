@@ -1,0 +1,195 @@
+/* CSS RESET */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 62,5%;
+}
+
+
+html:focus-within {
+  scroll-behavior: smooth;
+  
+}
+
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*STYLES*/
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 465px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #252933;
+    padding: 0 1rem;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.modal.modal.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12rem;
+}
+
+.credit-card {
+    width: 380px;
+    height: 205px;
+    background: linear-gradient(35deg, #ea7564, #f7a363);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+form{
+    margin-top: 12rem;
+}
+
+input[type=text]{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button{
+    display: block;
+    width: 100%;
+    background-color: #f7a363;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+button[type=submit],
+button[type=button]{
+  padding: 0.6rem 0;
+}
+
+button[type=submit]{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form-footer{
+    display: flex;
+    gap: 0.4rem;
+}
+
+/*TYPOGRAPHY */
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 1em;
+}
+
+input {
+    margin-top: 0.1em;
+    margin-bottom: 0.9em;
+}
+
+label, input, button{
+    padding: 0.3em 0;
+    font-weight: 500;
+}
+
+.card-img-number{
+    letter-spacing: 0.2em;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 1.5em;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.modal-title,
+.modal-description {
+  color: #fff;
+}
+
+.modal-description {
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+  
+}
+
+/* DARK COLOURS */
+
+main {
+  background-color: #001021;
+}
+
+.container {
+  background-color: #00264f;
+}
+
+label {
+  color: #fff;
+}
