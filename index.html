@@ -30,7 +30,7 @@
         name="card-number"
         placeholder="e.g 0000 0000 0000 0000"
         data-maxlength="19" 
-        oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+        oninput="this.value = this.value=this.value.slice(0,this.dataset.maxlength)"
         required>
     </label>
 
@@ -48,7 +48,7 @@
             <input 
             type="text"
             data-maxlength="2" 
-            oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1'); this.value=this.value.slice(0,this.dataset.maxlength)"
             id="expiration-mm"
             name="expiration-mm"
             placeholder="MONTH"
@@ -58,7 +58,7 @@
             <label for="expiration-yy">EXPIRATION YY
             <input type="text"
             data-maxlength="2" 
-            oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1'); this.value=this.value.slice(0,this.dataset.maxlength)"
             id="expiration-yy"
             name="expiration-yy"
             placeholder="YEAR"
@@ -68,7 +68,7 @@
             <label for="cvv">CVV
             <input type="text"
             data-maxlength="3" 
-            oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1'); this.value=this.value.slice(0,this.dataset.maxlength)"
             id="cvv"
             name="cvv"
             placeholder="CVV"
