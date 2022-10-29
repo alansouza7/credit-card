@@ -18,11 +18,11 @@ I've created a credit card project to gather all the information put into the fo
 
 ## 💻 Reflection
 
-- This project has been built with the purpose of putting into practise everything learned so far from the Scrimba and Dev em Dobro frontend developer courses. It's been great to see how forms work behind the scenes. I've spent 1 day to finish this off, spending the majority of the time sorting out the JS functionality. 
+- This project has been built with the purpose of putting into practice everything learned so far from the Scrimba and Dev em Dobro frontend developer courses. It's been great to see how forms work behind the scenes. I've spent 1 day finishing this off, spending the majority of the time sorting out the JS functionality. 
 
-- I wanted to create a project where I could put into practise the formData method and I'm very please with the result. It was great to build muscle memory as well as to create something of my own.
+- I wanted to create a project where I could put into practice the formData method and I'm very pleased with the result. It was great to build muscle memory as well as to create something of my own.
 
-- I've faced a few challenges, such as maintaing the text when the user delete the input value, it took me a while to find the solution, but glad I could sort that out using some if else statements.
+- I've faced a few challenges, such as maintaining the text when the user deletes the input value, it took me a while to find the solution, but glad I could sort that out using some if else statements.
 
 - Skills learned throughout the project, FormData, .get ( ), creating modals, input values.
 
